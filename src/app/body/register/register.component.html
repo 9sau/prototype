@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <ul>
+                <li *ngFor="let item of navigationList">
+                    <a routerLink="{{ item.route }}">{{ item.value }}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-8">
+            <router-outlet name="registerOutlet"></router-outlet>
+        </div>
+    </div>
+</div>
