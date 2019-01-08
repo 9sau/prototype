@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { FormComponent } from './form.component';
 
@@ -8,6 +9,7 @@ describe('FormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ FormsModule ],
       declarations: [ FormComponent ]
     })
     .compileComponents();
@@ -21,5 +23,10 @@ describe('FormComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should submit the form and set submitted as true', () => {
+    component.onSubmit();
+    expect(component.submitted).toBeTruthy();
   });
 });

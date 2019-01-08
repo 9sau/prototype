@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormService } from './service/form.service';
 
 @Component({
   selector: 'app-form',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+  user: any = {
+    email: '',
+    password: ''
+  };
+  submitted = false;
+  constructor(public formService: FormService) { }
 
   ngOnInit() {
   }
 
+  onSubmit() {
+    this.submitted = true;
+    this.formService.addUser(this.user);
+  }
 }

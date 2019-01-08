@@ -8,12 +8,9 @@ import { FaqComponent } from './body/register/faq/faq.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'register/faqs', component: FaqComponent, outlet: 'registerOutlet' },
-  { path: 'register/form', component: RegisterComponent, outlet: 'registerOutlet' },
-  { path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
+  /* { path: 'register/faqs', component: FaqComponent, outlet: 'registerOutlet' },
+  { path: 'register/form', component: RegisterComponent, outlet: 'registerOutlet' }, */
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: ErrorComponent }
 ];
 

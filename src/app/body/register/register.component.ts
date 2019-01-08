@@ -9,16 +9,15 @@ export class RegisterComponent implements OnInit {
   navigationList = [{
       name: 'FAQs',
       value: 'FAQs',
-      route: '/faq'
+      route: 'faqs'
     }, {
       name: 'Register',
       value: 'Register',
-      route: '/form'
+      route: 'form'
     }];
 
   constructor() { }
 
   ngOnInit() {
   }
-
 }
