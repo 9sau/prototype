@@ -19,6 +19,6 @@ describe('FormService', () => {
 
     service.addUser(mockUser);
 
-    expect(service.users.length).toBe(1);
+    expect(service.users).toContain(mockUser);
   });
 });
