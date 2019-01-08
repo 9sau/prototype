@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 
 import { FormComponent } from './form.component';
+import { FormService } from './service/form.service';
 
 describe('FormComponent', () => {
   let component: FormComponent;
@@ -23,10 +24,12 @@ describe('FormComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+    expect(component.user).toBeDefined();
   });
 
   it('should submit the form and set submitted as true', () => {
     component.onSubmit();
     expect(component.submitted).toBeTruthy();
+    // spyOn(FormService, 'addUser')
   });
 });

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormService } from './service/form.service';
+import { User } from 'src/app/models/user.model';
+import { UseExistingWebDriver } from 'protractor/built/driverProviders';
 
 @Component({
   selector: 'app-form',
@@ -8,12 +10,11 @@ import { FormService } from './service/form.service';
 })
 export class FormComponent implements OnInit {
 
-  user: any = {
-    email: '',
-    password: ''
-  };
+  user: User;
   submitted = false;
-  constructor(public formService: FormService) { }
+  constructor(public formService: FormService) {
+    this.user = new User();
+  }
 
   ngOnInit() {
   }

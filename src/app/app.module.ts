@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { BodyComponent } from './body/body.component';
-import { HomeComponent } from './body/home/home.component';
-import { ErrorComponent } from './error/error.component';
-import { RegisterComponent } from './body/register/register.component';
-import { FaqComponent } from './body/register/faq/faq.component';
-import { FormComponent } from './body/register/form/form.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BodyComponent } from './components/body/body.component';
+import { HomeComponent } from './components/body/home/home.component';
+import { ErrorComponent } from './components/error/error.component';
+import { RegisterComponent } from './components/body/register/register.component';
+import { FaqComponent } from './components/body/register/faq/faq.component';
+import { FormComponent } from './components/body/register/form/form.component';
 
 @NgModule({
   declarations: [
