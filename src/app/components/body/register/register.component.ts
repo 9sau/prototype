@@ -6,15 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  navigationList = [{
-      name: 'FAQs',
-      value: 'FAQs',
-      route: 'faqs'
-    }, {
-      name: 'Register',
-      value: 'Register',
-      route: 'form'
-    }];
 
   constructor() { }
 

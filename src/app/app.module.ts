@@ -11,6 +11,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { RegisterComponent } from './components/body/register/register.component';
 import { FaqComponent } from './components/body/register/faq/faq.component';
 import { FormComponent } from './components/body/register/form/form.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormComponent } from './components/body/register/form/form.component';
     ErrorComponent,
     RegisterComponent,
     FaqComponent,
-    FormComponent
+    FormComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
