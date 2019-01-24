@@ -17,6 +17,9 @@ const routes: Routes = [
         path: '',
         component: SidebarComponent,
         outlet: 'sidebar'
+      }, {
+        path: 'faq',
+        component: FaqComponent
       }
     ]
   },

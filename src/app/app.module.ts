@@ -12,6 +12,7 @@ import { RegisterComponent } from './components/body/register/register.component
 import { FaqComponent } from './components/body/register/faq/faq.component';
 import { FormComponent } from './components/body/register/form/form.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     RegisterComponent,
     FaqComponent,
     FormComponent,
-    SidebarComponent
+    SidebarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
