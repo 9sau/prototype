@@ -13,6 +13,8 @@ import { FaqComponent } from './components/body/register/faq/faq.component';
 import { FormComponent } from './components/body/register/form/form.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LayoutWithSidebarComponent } from './layouts/layout-with-sidebar/layout-with-sidebar.component';
+import { LayoutWithoutSidebarComponent } from './layouts/layout-without-sidebar/layout-without-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FooterComponent } from './components/footer/footer.component';
     FaqComponent,
     FormComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    LayoutWithSidebarComponent,
+    LayoutWithoutSidebarComponent
   ],
   imports: [
     BrowserModule,
